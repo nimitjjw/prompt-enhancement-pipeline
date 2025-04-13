@@ -1,0 +1,18 @@
+[
+    {
+      "id": "v1",
+      "prompt_template": "Create a 3-day travel itinerary for: {destination}. Make sure it includes cultural spots and scenic beauty.",
+      "input": "Hey, I’m planning a 3-day trip to Kyoto this April. I love cherry blossoms, temples, and local food. Can you help me with an itinerary?"
+    },
+    {
+      "id": "v2",
+      "prompt_template": "You are a travel expert. Based on the input, write a detailed 3-day plan that includes historical sites, seasonal highlights, and great food around {destination}.",
+      "input": "Hey, I’m planning a 3-day trip to Kyoto this April. I love cherry blossoms, temples, and local food. Can you help me with an itinerary?"
+    },
+    {
+      "id": "v3",
+      "prompt_template": "Act as a helpful travel assistant. Suggest a 3-day Kyoto itinerary for the following user request:\n\n{destination}\n\nInclude daily plans, sightseeing suggestions, and meal recommendations.",
+      "input": "Hey, I’m planning a 3-day trip to Kyoto this April. I love cherry blossoms, temples, and local food. Can you help me with an itinerary?"
+    }
+  ]
+  
