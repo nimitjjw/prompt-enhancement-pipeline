@@ -1,18 +1,23 @@
 [
     {
-      "destination": "I'm planning a 3-day trip to Kyoto this April. I love cherry blossoms, temples, and local food. Can you help me with an itinerary?"
+      "destination": "I'm planning a 3-day trip to Kyoto this April. I love cherry blossoms, temples, and local food. Can you help me with an itinerary?",
+      "reference": "A well-structured, day-by-day itinerary covering major attractions in Kyoto, with specific recommendations for cherry blossom viewing, temple visits, and local cuisine."
     },
     {
-      "destination": "I want a cultural 2-day Kyoto trip with a tea ceremony and geisha experience."
+      "destination": "I want a cultural 2-day Kyoto trip with a tea ceremony and geisha experience. Any suggestions?",
+      "reference": "A concise itinerary focused on cultural experiences, including a tea ceremony and exploration of geisha districts."
     },
     {
-      "destination": "Plan a 3-day foodie tour of Kyoto that features local street food and traditional restaurants."
+      "destination": "Plan a 3-day foodie tour of Kyoto that highlights street food and traditional restaurants.",
+      "reference": "An itinerary that emphasizes culinary experiences, listing the best street food vendors and local restaurants in Kyoto."
     },
     {
-      "destination": "Create a budget-friendly 3-day itinerary for Kyoto including hostels and affordable dining options."
+      "destination": "Create a budget-friendly 3-day itinerary for Kyoto, including hostels and affordable dining options.",
+      "reference": "A practical and budget-focused travel plan that provides cost-effective accommodation and dining recommendations while covering major sights."
     },
     {
-      "destination": "I want a romantic 3-day getaway in Kyoto focused on scenic walks, intimate dining, and cultural experiences."
+      "destination": "I want a romantic 3-day getaway in Kyoto focused on scenic walks, intimate dining, and cultural experiences.",
+      "reference": "A romantic itinerary featuring scenic spots, intimate dining experiences, and cultural activities ideal for couples."
     }
   ]
   
