@@ -30,16 +30,22 @@ for item in prompt_data:
         "tags": [f"prompt-{item['id']}"]
     })
 
-    response = chain.invoke({"destination": item["input"]})
+    # Error handling/Test for pipeline failures
+    try:
+        response = chain.invoke({"destination": item["input"]})
+        output = response.content
+    except Exception as e:
+        print(f"failed to process prompt {item['id']}: {e}")
+        output = None
 
     print(f"\n--- Prompt ID: {item['id']} ---")
-    print(response.content)
+    print(output)
 
     results.append({
         "id": item["id"],
         "prompt_template": item["prompt_template"],
         "input": item["input"],
-        "output": response.content,
+        "output": output,
         "timestamp": datetime.now().isoformat()
     })
 
