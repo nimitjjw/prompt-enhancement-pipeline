@@ -26,9 +26,11 @@ for item in prompt_data:
     )
 
     # Attach prompt ID as a LangSmith tag for easier tracking
-    chain = prompt | llm.with_config(config={
-        "tags": [f"prompt-{item['id']}"]
-    })
+    # chain = prompt | llm.with_config(config={
+    #     "tags": [f"prompt-{item['id']}"]
+    # })
+    chain = (prompt | llm).with_config(config={"tags": [f"prompt-{item['id']}"]})
+
 
     # Error handling/Test for pipeline failures
     try:
