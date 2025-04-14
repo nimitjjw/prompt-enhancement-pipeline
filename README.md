@@ -50,6 +50,76 @@ Example results:
 - Prompt version v2: Average automated score of approximately 0.85
 - Prompt version v3: Average automated score of approximately 0.90
 
+## Dashboard Graphs & Metrics Overview
+
+This pipeline’s observability features leverage separate charts in LangSmith to monitor core metrics. Below are the specific charts, each with a short explanation and an embedded screenshot.
+
+---
+
+### 1. Prompt-v1 Run Latency
+
+- **Metric:** Average run latency (execution time) for Prompt v1.  
+- **Purpose:** Helps determine how quickly Prompt v1 completes its requests, indicating whether v1 is slower or more efficient than other versions.  
+- **Dashboard Graph:**
+  ![Prompt-v1 Run Latency](images/prompt_v1_latency.png)
+  
+  The above line chart illustrates the latency (in seconds) over time for runs using Prompt v1.
+
+---
+
+### 2. Prompt-v2 Run Latency
+
+- **Metric:** Average run latency for Prompt v2.  
+- **Purpose:** Monitors execution speed specifically for Prompt v2, which may differ due to its prompt structure or instructions.  
+- **Dashboard Graph:**
+  ![Prompt-v2 Run Latency](images/prompt_v2_latency.png)
+  
+  This line chart shows how quickly or slowly Prompt v2 completes its runs.
+
+---
+
+### 3. Prompt-v3 Run Latency
+
+- **Metric:** Average run latency for Prompt v3.  
+- **Purpose:** Evaluates runtime performance for Prompt v3, allowing direct comparison with v1 and v2 latencies.  
+- **Dashboard Graph:**
+  ![Prompt-v3 Run Latency](images/prompt_v3_latency.png)
+  
+  This chart displays how Prompt v3’s latency fluctuates over time.
+
+---
+
+### 4. Total Tokens over Time
+
+- **Metric:** Shows the combined token usage (prompt + completion) for each run.  
+- **Purpose:** Understanding total token usage is key for cost management and efficiency. A sudden spike might indicate overly verbose prompts or outputs.  
+- **Dashboard Graph:**
+  ![Total Tokens over Time](images/total_tokens.png)
+  
+  The bar chart highlights how many tokens were consumed by each run overall.
+
+---
+
+### 5. Prompt vs. Completion Tokens over Time
+
+- **Metric:** Compares tokens used in the input prompt versus those generated in the LLM’s output.  
+- **Purpose:** This breakdown helps reveal if your pipeline is consuming excessive tokens in prompts or if the LLM’s outputs are excessively long.  
+- **Dashboard Graph:**
+  ![Prompt vs Completion Tokens](images/prompt_vs_completion.png)
+  
+  The line chart indicates prompt token counts versus completion token counts over time.
+
+---
+
+### 6. Error Rate
+
+- **Metric:** Error rate of the pipeline in percentage over time.  
+- **Purpose:** Reflects stability of the pipeline. A high error rate may suggest issues in prompt structures, LLM calls, or infrastructure.  
+- **Dashboard Graph:**
+  ![Error Rate](images/error_rate.png)
+  
+  This chart shows what percentage of runs encountered errors, helping you track reliability trends.
+
 ## Future Improvements
 - Expand the evaluation dataset to include a wider range of travel scenarios.
 - Integrate native LangSmith evaluator chains for more sophisticated automated scoring.
