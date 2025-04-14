@@ -45,7 +45,7 @@ Human-in-the-loop Evaluation is performed using custom feedback tags:
 
 Automated Evaluation is implemented in run_evaluation.py, where cosine similarity between embeddings of generated outputs and reference texts is computed. The SentenceTransformer “all-MiniLM-L6-v2” model is used to derive embeddings, and cosine similarity produces scores between 0 and 1 indicating how semantically similar the output is to the reference.
 
-Example results (illustrative):
+Example results:
 - Prompt version v1: Average automated score of approximately 0.78
 - Prompt version v2: Average automated score of approximately 0.85
 - Prompt version v3: Average automated score of approximately 0.90
